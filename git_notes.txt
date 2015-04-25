@@ -11,6 +11,10 @@
 	-	Staging area
 	-	Repository
 
+	CONCEPT: Hidden files
+	-	Files with a . like .git are hidden files
+	-	Files that you may not want to see day in and day out
+
 **********/
 
 /*********
@@ -21,5 +25,7 @@
 	- add		Places a new file under control of your repository
 		- Git trackes changes once added
 		- Part of the staging area
+	- commit	Creates a permanent record of changes to your repository
+
 
 **********/
