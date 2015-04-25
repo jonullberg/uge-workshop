@@ -15,6 +15,8 @@
 	-	Files with a . like .git are hidden files
 	-	Files that you may not want to see day in and day out
 
+	You can set an upstream with -u
+
 **********/
 
 /*********
@@ -26,6 +28,8 @@
 		- Git trackes changes once added
 		- Part of the staging area
 	- commit	Creates a permanent record of changes to your repository
+	- push		You can use -u for upstream
 
 
 **********/
+
