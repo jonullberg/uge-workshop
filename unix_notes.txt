@@ -1,0 +1,212 @@
+
+   26  ls   					// List out contents
+   27  cd web 					// Change directory
+   28  mkdir unix-git 			// Make Directory
+   29  cd unix-git
+   30  subl notes.js 			// Open using Sublime
+   31  ls
+   32  subl notes.js
+   33  ls --color
+   34  cd /
+   35  cd tmp
+   36  ls
+   37  ls --color
+   38  ls --color[=never]
+   39  ls --color[never]
+   40  ls --color[=NEVER]
+   41  ls --color["never"]
+   42  cd
+   43  cd /
+   44  cd /home/jonathan
+   45  ls
+   46  cd /tmp
+   47  ls
+   48  mkdir my\ folder			// \ will escape space so it is read by linux
+   49  ls
+   50  cd my folder
+   51  cd my\ folder
+   52  cd
+   53  ls -l  					// Long form of list
+   54  cd Videos
+   55  pwd
+   56  cd
+   57  cd web
+   58  ls
+   59  cd avant
+   60  ls
+   61  cd app
+   62  pwd						// Print working directory
+   63  cd ..					// Go back one directory
+   64  cd ../..
+   65  cd web/avant/app
+   66  ls
+   67  cd css
+   68  ls
+   69  cd ../../../..
+   70  cd web/avant
+   71  cd /
+   72  ls
+   73  cd proc
+   74  ls
+   75  cd
+   76  cd /
+   77  ls
+   78  cd opt
+   79  ls
+   80  cd sublime_text
+   81  ls
+   82  ls ~						// ~ Represents Home directory
+   83  ls
+   84  ls ~
+   85  ls ~/Pictures
+   86  ls ~/Pictures/Wedding\ Favorites
+   87  ls ~/Pictures
+   88  history
+   89  history | less			// Pipes connecting/chaining two commands
+   90  man less
+   91  cd
+   92  subl moving_around.txt
+   93  history > moving_around.txt  // Redirects(copies) output to file
+
+/****************************
+   Unix and Git For Everyone
+*****************************/
+
+/****************************
+   
+   Goals:
+   -  Comfort and agility around the command line
+   -  Mastery of basic versioning workflow with git
+
+   Agenda
+   -  Find/install cmd line
+   -  Get accustomed to finding your way around
+   -  Create a journal to record what you learn
+   -  Put your journal into version control with basic git workflow
+   -  Learn some more advanced shell commands
+   -  Learn some more advanced git commands
+
+   By the end of today
+   -  Using on your browser, text editor and cmd line, you'll be able to:
+   -  move around and manipulate files with confidence
+   -  learn about common unix commands
+   -  run programs from your cmd line
+   -  control access to your filesystem
+   -  create a git repository from scratch
+   -  add, edit, and remove items from a repository
+   -  upload to remote repository (github)
+
+   What is Unix?
+   -  Multiuser Multitasking Operating System
+
+   History
+   -  Created at AT&T's Bell labs by Ken Thompson and Dennis Ritchie (also made C)
+   -  In 1984 Richard Stallman began the creation of GNU Project (Gnu's not Unix)
+      with the intention of creating an open source version of Unix
+   -  
+
+   Philosophy
+   -  Everything is a file
+      -  Including pieces of the Kernel and hardware
+      -  Linux exposes these interfaces in /proc and /sys
+      -  OSX does not directly expose these interfaces to the user, instead use sysctl
+   -  "Do one thing and do it well"
+   -  "Every output can become the input of another program"
+
+   Two major Unix Components
+   -  Kernel
+      -  Is the aboslue core of the OS
+      -  Determines what runs on the CPU
+      -  Interacts directly with the hardware
+   -  The shell
+      -  How the user interacts with the OS
+   -  Representing two different execution environments
+      -  Kernel space
+      -  User space
+
+   Kernel Space
+   -  Represents the "admin" space
+   -  Directly affects the hardware, filesystem and how the system itself runs
+   -  You need elevated access in order to manipulate anything here
+   -  At the same time, users need to be able to access things like hardware and the filesystem
+   -  The Kernel provides "system calls"
+
+   User Space
+   -  Has to use system calls to access hardware
+   -  Manifests as a "shell" run in a terminal
+
+
+
+*****************************/
+
+/****************************
+
+   Travelling the user space
+
+   CONCEPT: The Path
+   -  Paths are like addresses but backwards
+      USA
+      Mountlake Terrace, WA
+      **Address**
+      Jonathan
+   -  if it starts with a "/" it is absolute path
+   -  My working directory /home/jonathan
+   -  cd / -- will send you to ROOT directory
+
+   CONCEPT: The Root
+   -  The root is the topmost container of computer filesystem
+   -  The root is restricted to administrative users
+   -  YOU SHOULD NEVER DELETE ANYTHING FROM THE ROOT
+
+   CONCEPT: Naming Convention
+   -  Don't use spaces in naming files, prefer dashes and underscores
+   -  Use lowercase letters as much as possible
+   
+
+*****************************/
+
+/****************************
+
+   CONCEPT: Piping ( | )
+   -  Allows you to redirect your output to another command
+      -  Chains commands together
+   CONCEPT: Redirection ( > )
+   -  allows you to redirect the data into another file
+      - Will overwrite whatever former file was
+   -  >> allows you to append rather than overwrite
+
+*****************************/
+
+/****************************
+
+   Key Terms:
+   cd - change directory (move to a different folder)
+   ls - list (list out the files in a directory)
+      -l  long form
+      -t  sort by time
+      -a  show all files
+      -r  reverse order of files
+      -
+   pwd - print working directory
+   man - prints out the manual
+   -  When working with spaces, you have to escape \ your space, 
+      or else unix reads it as a delimiter
+
+   /  will go back to root directory or is absolute path beginning
+   ~  is a replacement for your home directory
+   .. will go up a directory
+   .  will represent cwd
+
+   -  When you start typing, you can use tab and it will autocomplete
+      -  If there is one option it will autocomplete it
+      -  If there are multiple options starting with those letters it will show you all options
+         -  Every successive tab will cycle through multiple options
+   less - prints out the output but allows you to scroll through it
+   head - prints out first 10 lines of file (-n will set amount of lines)
+   tail - saa except prints LAST 10 lines of file
+
+   mv - moves file, takes two parameters, first file you want to move, second is where to       move it to, can also be used to rename a file
+
+
+
+*****************************/

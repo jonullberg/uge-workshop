@@ -1,0 +1,18 @@
+/*********
+
+	Git Notes
+
+**********/
+
+/*********
+	
+**********/
+
+/*********
+	
+	Commands:
+	- config   	See configuration for git
+	- init  	Initialize a git repository
+	- 
+
+**********/
