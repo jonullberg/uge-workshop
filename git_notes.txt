@@ -6,6 +6,11 @@
 
 /*********
 	
+	When working with git, three directories
+	-	Working directory
+	-	Staging area
+	-	Repository
+
 **********/
 
 /*********
@@ -13,6 +18,8 @@
 	Commands:
 	- config   	See configuration for git
 	- init  	Initialize a git repository
-	- 
+	- add		Places a new file under control of your repository
+		- Git trackes changes once added
+		- Part of the staging area
 
 **********/
